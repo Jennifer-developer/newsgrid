@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add external style <link> CSS CDN link[free Webfont] from 'font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+
+    <!-- Add external embed <link> from 'Google Fonts Family': add 'Lato' & 'Staatliches' -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 'style.css' -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- 'utilities.css' -->
+    <link rel="stylesheet" href="css/utilities.css" />
+    <!-- 'mobile.css' -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/mobile.css"
+    />
+
+    <!-- Add external 'favicon' <link> tag -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>NewsGrid | Latest News</title>
+  </head>
+
+  <body>
+    <!-- Article Page: Navigation -->
+    <nav id="main-nav">
+      <div class="container">
+        <!--1) <img> 'logo.png' -->
+        <img src="img/logo.png" alt="NewsGrid" class="logo" />
+        <!--2) Social Icon Links -->
+        <div class="social">
+          <!--2.1) Facebook Icon links -->
+          <a href="http://facebook.com" target="_blank"
+            ><i class="fab fa-facebook fa-2X"></i
+          ></a>
+          <!--2.2) Twitter Icon links -->
+          <a href="http://twitter.com" target="_blank"
+            ><i class="fab fa-twitter fa-2X"></i
+          ></a>
+          <!--2.3) Instagram Icon links -->
+          <a href="http://instagram.com" target="_blank"
+            ><i class="fab fa-instagram fa-2X"></i
+          ></a>
+          <!--2.4) Youtube Icon links -->
+          <a href="http://youtube.com" target="_blank"
+            ><i class="fab fa-youtube fa-2X"></i
+          ></a>
+        </div>
+        <!--END 'social' /div-->
+        <!-- 3) Menu Links -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <!--END 'Menu Link Group' /ul-->
+      </div>
+      <!--END 'container' /div-->
+    </nav>
+    <!-- END 'Navigation' </nav> -->
+
+    <!-- Section:  'Article' -->
+    <section id="article">
+      <div class="container">
+        <div class="page-container">
+          <!-- Grid System -->
+          <article class="card">
+            <!--1) Grid Item#1: <img> for 'ent1.jpg' -->
+            <img src="img/articles/ent1.jpg" alt="entertain1" />
+            <!--2) Grid Item#1: <h1> tag with utility class.'l-heading' for 'large heading' -->
+            <h1 class="l-heading">Article One: Title Heading</h1>
+            <!--3) Grid Item#1: <div> tag with class.'meta' -->
+            <div class="meta">
+              <!--3.1) inline-element: Author Icon-->
+              <small>
+                <!-- Add <small> tag for custom icon <i>: the 'user icon' -->
+                <i class="fas fa-user"></i> Written By Author --Jennifer April
+                13, 2020
+              </small>
+              <!--3.2) <div> tag with class.'meta' & class.'category' & with its utility class.'category-ent' -->
+              <div class="category category-ent">Entertainment</div>
+            </div>
+            <!--END 'class.meta' /div -->
+
+            <!--4) Grid Item#1: para. with 50 words-->
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus necessitatibus, eveniet iusto suscipit accusamus enim,
+              alias exercitationem voluptatum sit voluptatibus nulla velit
+              commodi, esse fugiat quisquam labore asperiores incidunt quaerat
+              non modi! At ratione quas minima distinctio nulla, illum laborum
+              architecto, reiciendis aliquam neque consectetur ipsum, labore
+              explicabo assumenda odio?
+            </p>
+            <!--5) Grid Item#1: para. with 150 words-->
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              asperiores excepturi dolores a soluta accusamus adipisci atque
+              blanditiis laudantium totam fugit illum eligendi, qui odit beatae
+              eveniet ut, nam dolor, distinctio quisquam. Eos, repellat minima
+              officiis quos dolorum harum nulla officia ab distinctio impedit
+              illum rem sit culpa qui, ipsa molestias nisi explicabo temporibus
+              magni adipisci repellendus! Dolorem a ducimus laudantium quod quae
+              odio fuga sint cum ab, quis beatae sunt quam ea asperiores commodi
+              doloremque totam, facere explicabo et! Distinctio cum explicabo
+              molestiae, est aut quas veritatis obcaecati alias voluptate
+              similique reprehenderit odio repellendus beatae, impedit mollitia
+              dolor velit magnam eum minus maxime iure temporibus architecto.
+              Molestiae nostrum pariatur praesentium excepturi recusandae
+              exercitationem dicta laboriosam, reiciendis aliquam! Error impedit
+              voluptatum doloremque ipsam voluptatem qui obcaecati enim rerum
+              laudantium autem minus quaerat iure, deleniti laboriosam nam,
+              omnis quod tempore sunt iusto porro earum alias aliquid? Minus
+              deserunt molestias obcaecati velit.
+            </p>
+          </article>
+          <!--END 'Grid Item#1' -->
+
+          <!-- 'Grid Item#2 -->
+          <!--Grid Item#2: <aside> id#'category' -->
+          <aside id="category" class="card">
+            <!--Grid Item#2: 1) <h2> tag -->
+            <h2>Categories</h2>
+            <!--Grid Item#2: 2) <ul> tag with its utility class.'list' -->
+            <ul class="list">
+              <!-- 'link item#1': Sports-->
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Sports</a>
+              </li>
+              <!-- "link item#2": Entertainment -->
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Entertainment</a
+                >
+              </li>
+              <!-- "link item#3": Technology -->
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Technology</a>
+              </li>
+              <!-- "link item#4": Fashion -->
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Fashion</a>
+              </li>
+              <!-- "link item#5": Shopping -->
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Shopping</a>
+              </li>
+            </ul>
+          </aside>
+          <!--END 'Grid Item#2 & .category' /aside> -->
+
+          <!-- Grid Item#3: <aside> Ads & .'card' -->
+          <aside class="card">
+            <h2>Ads</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae,
+              voluptates!
+            </p>
+            <a href="#" class="btn btn-secondary">Buy Now</a>
+          </aside>
+          <!-- END 'Grid Item#3' </aside>-->
+        </div>
+        <!--END 'page-container' /div-->
+      </div>
+      <!--END 'container' /div-->
+    </section>
+    <!--END 'container' /section-->
+
+    <!-- Footer -->
+    <footer id="main-footer" class="py-2">
+      <div class="container footer-container">
+        <!--'Grid Item#1': 1st Grid Column -->
+        <div>
+          <!--'Grid Item#1': <img> tag for 'logo_light.png' -->
+          <img src="img/logo_light.png" alt="logoLight" />
+          <!--'Grid Item#1: <p> tag -->
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur
+            minus soluta, labore illo deleniti doloribus ea quidem dolorem
+            possimus rem?
+          </p>
+        </div>
+        <!--END 'Grid Item#1' /div-->
+
+        <!-- 'Grid Item#2': 2nd Grid Column -->
+        <div>
+          <!--1) 'Grid Item#2': <h3> tag -->
+          <h3>Email Newsletter</h3>
+          <!--2) 'Grid Item#2': <p> tag with 8 words -->
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <!--3) 'Grid Item#2', add <form> tag -->
+          <form action="">
+            <!-- 3.1) <form>: <input> attribute & placeholder-->
+            <input type="email" placeholder="Enter Email" />
+            <!-- 3.2) <form>: 'button' -->
+            <input type="submit" value="Subscribe" class="btn btn-primary" />
+          </form>
+        </div>
+        <!--END 'Grid Item#2' /div-->
+
+        <!-- 'Grid Item#3': 3rd Grid Column -->
+        <div>
+          <!--1) 'Grid Item#3': <h3> tag -->
+          <h3>Site Links</h3>
+          <!--2) 'Grid Item#3': <ul> tag with class.'list' -->
+          <ul class="list">
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <!--END 'Grid Item#3' /div-->
+
+        <!-- 'Grid Item#4': 4th Grid Column -->
+        <div>
+          <!--1) 'Grid Item#4': <h2> tag  -->
+          <h2>Join Our Club</h2>
+          <!--2) 'Grid Item#4": <p> tag with 10 words-->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+            nesciunt!
+          </p>
+          <!--3) 'Grid Item#4': add <a> tag with a 'Button Link' with class.'btn' & its utility class.'btn-secondary'-->
+          <a href="#" class="btn btn-secondary">Join Now</a>
+        </div>
+        <!--'Grid Item#4' /div-->
+
+        <!--'Grid Item#5': 5th Grid Column -->
+        <div>
+          <!--1) 'Grid Item#5': <p> tag -->
+          <p>Copyright &copy; 2020, All Rights Reserved</p>
+        </div>
+        <!--END 'Grid Item#5' /div-->
+      </div>
+      <!--END 'container' /div-->
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+/* General Style */
+:root {
+  --primary-color: #c72727; /*Dark-Red*/
+  --secondary-color: #f99500; /*Orange*/
+  --light-color: #f3f3f3; /* white-grey */
+  --dark-color: #333; /*Dark-Grey*/
+  --max-width: 1100px;
+}
+
+.category {
+  --sports-color: #f99500; /*Orange*/
+  --ent-color: #a66bbe; /*Purple-Pink*/
+  --tech-color: #009cff; /*Light-Blue*/
+}
+
+/* Reset the CSS default style for everything */
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* Style for <body>, <a>, <ul>, <p>, <img>, and Headings */
+body {
+  /* Add 'Google Font Family */
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  background: var(--light-color); /*white-grey*/
+}
+
+a {
+  color: #333; /*dark-grey*/
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Style for the 'Heading's */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Add 'Google Font Family */
+  font-family: "Staatliches", cursive;
+  margin-bottom: 0.55em;
+  line-height: 1.3;
+}
+
+/* Navigation  Styling */
+#home-nav {
+  background: #fff; /*white*/
+  /*4.0-b) 2nd, we wanna the 'navbar' always 'stick to the top'; by postioning it to be 'sticky' */
+  position: fixed;
+  width: 100%;
+  /*4.0-c) 3rd, by adding 'top: 0' to ensure the 'navbar' sticked to the very top with '0 space' */
+  top: -100px;
+  /*4.0-d) 4th, we wanna the 'navbar' always appear/shown at the very front */
+  z-index: 2;
+  /* Add box-shadow: */
+  box-shadow: 2px rgba(0, 0, 0, 0.2);
+}
+
+#main-nav {
+  background: #fff; /*white*/
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 2px rgba(0, 0, 0, 0.2);
+}
+
+#home-nav .container,
+#main-nav .container {
+  display: grid;
+  grid-template-columns: 6fr 3fr 2fr;
+  padding: 1rem;
+  align-items: center;
+}
+
+/* Style for Navbar -- Logo */
+#home-nav .logo,
+#main-nav .logo {
+  width: 180px;
+}
+
+/* Style for Navbar -- Menu Links */
+#home-nav ul,
+#main-nav ul {
+  justify-self: end;
+  display: flex;
+}
+
+#home-nav ul li a,
+#main-nav ul li a {
+  padding: 0.75rem;
+  font-weight: bold;
+}
+
+/* Navbar: Current Page Status: => Home */
+#home-nav ul li a.current,
+#main-nav ul li a.current {
+  background: var(--primary-color); /*dark-red*/
+  color: #fff; /*white*/
+}
+
+/* Navbar: Current Page Status:Hover */
+#home-nav ul li a:hover,
+#main-nav ul li a:hover {
+  background: var(--light-color); /*white-grey*/
+  border-left: 5px var(--primary-color) solid;
+  color: var(--primary-color); /*dark-red*/
+}
+
+/* Style for Navbar -- Social Icons */
+#home-nav .social,
+#main-nav .social {
+  justify-self: center;
+}
+
+#home-nav .social i,
+#main-nav .social i {
+  color: #777; /*medium-grey*/
+  margin-right: 0.5rem;
+}
+
+/* Showcase Styling  */
+#showcase {
+  color: #fff; /*white*/
+  background: #333; /*dark-grey*/
+  padding: 2rem;
+  position: relative;
+}
+
+#showcase:before {
+  content: "";
+  background: url("../img/featured.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#showcase .showcase-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#showcase .showcase-content {
+  z-index: 1;
+}
+
+#showcase .showcase-content p {
+  margin-bottom: 1rem;
+}
+
+/* Home-Articles Styling */
+#home-articles .articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+#home-articles .articles-container > *:first-child {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  grid-column: 1 / span 2;
+  align-items: center;
+}
+
+#home-articles .articles-container > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  grid-column: 2 / span 2;
+  align-items: center;
+}
+
+/* Footer Styling */
+#main-footer {
+  background: var(--dark-color); /*dark-grey*/
+  color: #fff; /*white*/
+}
+
+#main-footer img {
+  width: 150px;
+}
+
+#main-footer a {
+  color: #fff; /*white*/
+}
+
+#main-footer .footer-container {
+  /* design <div> with class.'footer-container' to be 'Grid Column System' */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+
+#main-footer .footer-container > *:last-child {
+  background: #444; /*medium-grey*/
+  grid-column: 1 / span 4;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+/* style for the [Grid Item#2]-> '2nd Grid Column'; by selecting the <form>'s <input> tag */
+#main-footer .footer-container input[type="email"] {
+  width: 90%; /*90% of the entire 'Grid Item#2*/
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type="submit"] {
+  width: 90%;
+}
+
+/* Article Page Styling */
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff; /* white */
+  padding: 0.5rem;
+}
+
+#article .meta .category {
+  margin-top: 0.4rem;
+}

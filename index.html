@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Add external style <link> CSS CDN link[free Webfont] from 'font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+
+    <!--Add external embed <link> from 'Google Fonts Family': add 'Lato' & 'Staatliches' -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/mobile.css"
+    />
+
+    <!-- Add external 'favicon' <link> tag -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <title>NewsGrid | Latest News</title>
+  </head>
+
+  <body>
+    <!-- Navbar: Navigation -->
+    <nav id="home-nav">
+      <div class="container">
+        <!--Navbar part A: <img> with 'logo.png'-->
+        <img src="img/logo.png" alt="NewsGrid" class="logo" />
+        <!--Navbar part B: <i> with socila media icons and links -->
+        <div class="social">
+          <!--Facebook icon & links -->
+          <a href="http://facebook.com" target="_blank"
+            ><i class="fab fa-facebook fa-2X"></i
+          ></a>
+          <!-- Twitter icon & links -->
+          <a href="http://twitter.com" target="_blank"
+            ><i class="fab fa-twitter fa-2X"></i
+          ></a>
+          <!-- Instagram icon & links -->
+          <a href="http://instagram.com" target="_blank"
+            ><i class="fab fa-instagram fa-2X"></i
+          ></a>
+          <!-- YouTube icon & links -->
+          <a href="http://youtube.com" target="_blank"
+            ><i class="fab fa-youtube fa-2X"></i
+          ></a>
+        </div>
+        <!--END 'social' /div-->
+
+        <!--Navbar part C: 'Menu Links' -->
+        <ul>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <!--END 'Menu Link Group' /ul-->
+      </div>
+      <!--END 'container' /div-->
+    </nav>
+    <!-- END 'Navigation Part /nav-->
+
+    <!-- Header: Showcase -->
+    <header id="showcase">
+      <div class="container">
+        <div class="showcase-container">
+          <!-- Grid Item #1 <div>: showcase-content -->
+          <div class="showcase-content">
+            <!--Grid Item#1 part 1: category tag -->
+            <div class="category category-sports">Sports</div>
+            <!--END 'category-sports' /div-->
+
+            <!-- Grid Item#1 part 2: <h1> -->
+            <h1>Some Sports Article</h1>
+            <!--Grid Item#1 part 3: <p> with 30 words -->
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+              et, voluptas repellendus eveniet officiis aspernatur accusantium
+              possimus quidem aliquid, exercitationem id voluptates quibusdam?
+              Corrupti delectus deserunt non sapiente, molestiae aperiam!
+            </p>
+
+            <!--Grid Item#1 part 4: <a> 'Button': Read More-->
+            <a href="article.html" class="btn btn-primary">Read More</a>
+          </div>
+          <!--END 'showcase-content' /div-->
+        </div>
+        <!--END 'showcase-container' /div-->
+      </div>
+      <!--END 'conatiner' /div-->
+    </header>
+
+    <!-- Section: Home Articles -->
+    <section id="home-articles" class="py-2">
+      <div class="container">
+        <!--Grid-Card#1-->
+        <!--1) add <h2> tag -->
+        <h2>Editor Picks</h2>
+        <!--2) add <div> class.'article-conatiner' -->
+        <div class="articles-container p-article">
+          <!--Card#1 'Grid Column' -->
+          <!--2.1.0)  Card#1: <article>  -->
+          <article class="card">
+            <!--2.1.1) Card#1: item#1: <img> -->
+            <img src="img/articles/ent1.jpg" alt="" />
+            <!--2.1.2) Card#1: item#2: 'ent category tag' -->
+            <div>
+              <div class="category category-ent">
+                Entertainment
+              </div>
+              <!--END 'category-ent' /div-->
+              <!-- 2.1.2) Card#1: item#2: <h3> Article Title-->
+              <h3>
+                <a href="article.html"> Article One: Lorem ipsum dolor</a>
+              </h3>
+              <!-- 2.1.2) Card#1: Item#2: <p> Article parag -->
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Debitis, cupiditate magnam officia blanditiis vitae autem dicta
+                minima ea! Tempora, perspiciatis?
+              </p>
+            </div>
+            <!-- END 'Card#1. Item#2' /div-->
+          </article>
+          <!--END 'article#1 .card#1' /article-->
+
+          <!--Card#2 'Grid Column' & 'utility class.'bg-dark' -->
+          <!-- 2.2.0) [article#2.card#2]-->
+          <article class="card bg-dark">
+            <!--Card#2: 'sports category tag' -->
+            <div class="category category-sports">
+              Sports
+            </div>
+            <!--END 'category-sports' /div-->
+            <!--Card#2: Article 2 Title -->
+            <h3>
+              <a href="article.html">Article Two: Lorem ipsum dolor</a>
+            </h3>
+            <!--Card#2: Article paragraph-->
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+              cupiditate magnam officia blanditiis vitae autem dicta minima ea!
+              Tempora, perspiciatis?
+            </p>
+          </article>
+          <!--END 'article#2 .card#2' /article-->
+
+          <!--Card#3 'Grid Column' -->
+          <!-- 2.3.0) Card#3: [article#3.card#3]-->
+          <article class="card">
+            <!--2.3.1) Card#3: <img> -->
+            <img src="img/articles/tech1.jpg" alt="techImg" />
+            <!--2.3.2) Card#3: 'tech category tag' -->
+            <div class="category category-tech">
+              Technology
+            </div>
+            <!--END 'category-tech' /div-->
+            <!--2.3.3) Card#3: artcile 3 Title -->
+            <h3>
+              <a href="article.html">Article Three: Lorem ipsum dolor</a>
+            </h3>
+            <!--2.3.4) Card#3: article para. with 20 words -->
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+              cupiditate magnam officia blanditiis vitae autem dicta minima ea!
+              Tempora, perspiciatis?
+            </p>
+          </article>
+          <!--END 'article#3 .card#3' /article-->
+
+          <!--Card#4 'Grid Column' -->
+          <!--2.4.0) Add Card#4: for [article#4.card#4]-->
+          <article class="card">
+            <!-- 2.4.1) Card#4: 'sports categ tag' -->
+            <div class="category category-sports">
+              Sports
+            </div>
+            <!--END 'category-sports' /div-->
+            <!-- 2.4.2) Card#4: article 4 Title -->
+            <h3>
+              <a href="article.html">Article Four: Lorem ipsum dolor</a>
+            </h3>
+            <!-- 2.4.3) Card#4: article para. with 20 words-->
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+              cupiditate magnam officia blanditiis vitae autem dicta minima ea!
+              Tempora, perspiciatis?
+            </p>
+            <!--2.4.4) Card#4: <img> 'sports1' -->
+            <img src="img/articles/sports1.jpg" alt="sports1Img" />
+          </article>
+          <!--END 'article#4 .card#4' /article-->
+
+          <!--Card#5 'Grid Column' -->
+          <!--2.5.0) Card#5: for [article#5.card#5]-->
+          <article class="card">
+            <!-- 2.5.1) Card#5: <img> 'tech2.jpg' -->
+            <img src="img/articles/tech2.jpg" alt="tech2Img" />
+            <!-- 2.5.2) Card#5: 'tech cate tag' -->
+            <div class="category category-tech">
+              Technology
+            </div>
+            <!--END 'category-tech' /div-->
+            <!-- 2.5.3) Card#5: Article Five title -->
+            <h3>
+              <a href="article.html">Article Five: Lorem ipsum dolor</a>
+            </h3>
+            <!-- 2.5.4) Card#5: para. with 20 words -->
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+              cupiditate magnam officia blanditiis vitae autem dicta minima ea!
+              Tempora, perspiciatis?
+            </p>
+          </article>
+          <!--END 'article#5 .card#5' /article-->
+
+          <!--Card#6 'Grid Column' & utility class.'bg-primary' -->
+          <!--2.6.0) Card#6: for [article#6.card#6]-->
+          <article class="card bg-primary">
+            <!-- 2.6.1) Card#6: 'sports cate tag' -->
+            <div class="category category-sports">
+              Sports
+            </div>
+            <!--END 'category-sports' /div-->
+            <!-- 2.6.3) Card#6: Article Six Title -->
+            <h3>
+              <a href="article.html">Article Six: Lorem ipsum dolor</a>
+            </h3>
+            <!-- 2.6.4) Card#6: para. with 20 words-->
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+              cupiditate magnam officia blanditiis vitae autem dicta minima ea!
+              Tempora, perspiciatis?
+            </p>
+          </article>
+          <!--END 'article#6 .card#6' /article-->
+
+          <!--Card#7 'Grid Column' -->
+          <!--2.7.0) Card#7  -->
+          <article class="card">
+            <!--'Grid Container-Card#7'-->
+            <!--2.7.1) Card#7: 'Grid Item#1' -->
+            <div>
+              <!-- 2.7.1) Card#7: Item#1 'ent cate tag'-->
+              <div class="category category-ent">
+                Entertainment
+              </div>
+              <!--END 'category-ent' /div-->
+              <!-- 2.7.1) Card#7: Item#1 'Article Seven Title' -->
+              <h3>
+                <a href="article.html">Article Seven: Lorem ipsum dolor</a>
+              </h3>
+              <!-- 2.7.1) Card#7: Item#1 'para.with 20 words' -->
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                impedit ipsa, minima odit placeat ducimus deserunt temporibus
+                rerum veritatis! Esse.
+              </p>
+            </div>
+            <!--END 'Grid Item#1'=> for 'Grid .Card#7' /div -->
+
+            <!--2.7.2) Card#7: Grid Item#2: <img> for 'ent2.jpg' -->
+            <img
+              src="img/articles/ent2.jpg"
+              alt="entertain2Img"
+            /><!--'Grid Item#2' for 'Grid .Card#7' -->
+          </article>
+          <!--END 'article#7 .card#7' /article-->
+        </div>
+        <!--END 'articles-container' /div-->
+      </div>
+      <!--END 'container' /div-->
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="py-2">
+      <div class="container footer-container">
+        <!--'Grid Item#1': 1st Grid Column -->
+        <div>
+          <!--'Grid Item#1': <img> tag for 'logo_light.png' -->
+          <img src="img/logo_light.png" alt="logoLight" />
+          <!--'Grid Item#1: <p> tag -->
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur
+            minus soluta, labore illo deleniti doloribus ea quidem dolorem
+            possimus rem?
+          </p>
+        </div>
+        <!--END 'Grid Item#1' /div-->
+
+        <!-- 'Grid Item#2': 2nd Grid Column -->
+        <div>
+          <!--1) 'Grid Item#2': <h3> tag -->
+          <h3>Email Newsletter</h3>
+          <!--2) 'Grid Item#2': <p> tag with 8 words -->
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <!--3) 'Grid Item#2', add <form> tag -->
+          <form action="">
+            <!-- 3.1) <form>: <input> attribute & placeholder-->
+            <input type="email" placeholder="Enter Email" />
+            <!-- 3.2) <form>: 'button' -->
+            <input type="submit" value="Subscribe" class="btn btn-primary" />
+          </form>
+        </div>
+        <!--END 'Grid Item#2' /div-->
+
+        <!-- 'Grid Item#3': 3rd Grid Column -->
+        <div>
+          <!--1) 'Grid Item#3': <h3> tag -->
+          <h3>Site Links</h3>
+          <!--2) 'Grid Item#3': <ul> tag with class.'list' -->
+          <ul class="list">
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <!--END 'Grid Item#3' /div-->
+
+        <!-- 'Grid Item#4': 4th Grid Column -->
+        <div>
+          <!--1) 'Grid Item#4': <h2> tag  -->
+          <h2>Join Our Club</h2>
+          <!--2) 'Grid Item#4": <p> tag with 10 words-->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+            nesciunt!
+          </p>
+          <!--3) 'Grid Item#4': add <a> tag with a 'Button Link' with class.'btn' & its utility class.'btn-secondary'-->
+          <a href="#" class="btn btn-secondary">Join Now</a>
+        </div>
+        <!--'Grid Item#4' /div-->
+
+        <!--'Grid Item#5': 5th Grid Column -->
+        <div>
+          <!--1) 'Grid Item#5': <p> tag -->
+          <p>Copyright &copy; 2020, All Rights Reserved</p>
+        </div>
+        <!--END 'Grid Item#5' /div-->
+      </div>
+      <!--END 'container' /div-->
+    </footer>
+
+    <!-- Add JavaScript for Slide Down on Scroll -->
+    <script>
+      // When the user scrolls down 15px from the top of the document, slide down the navbar
+      // When the user scrolls to the top of the page, slide up the navbar (100px out of the top view)
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 15 ||
+          document.documentElement.scrollTop > 15
+        ) {
+          document.getElementById("home-nav").style.top = "0";
+        } else {
+          document.getElementById("home-nav").style.top = "-100px";
+        }
+      }
+    </script>
+  </body>
+</html>

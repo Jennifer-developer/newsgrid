@@ -1,0 +1,177 @@
+/* Utility Classes */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.category {
+  display: inline-block;
+  color: #fff; /*white*/
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.category-sports {
+  background: var(--sports-color);
+}
+
+.category-ent {
+  background: var(--ent-color);
+}
+
+.category-tech {
+  background: var(--tech-color);
+}
+
+/* Utility Class -- 'Buttons' */
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--dark-color); /*dark-grey*/
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-light {
+  background: var(--light-color);
+}
+
+.btn-primary {
+  background: var(--primary-color); /*dark-red*/
+}
+
+.btn-secondary {
+  background: var(--secondary-color); /*orange*/
+}
+
+/* Add another style of 'Button' */
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Style for '.card' */
+.card {
+  background: #fff; /*white*/
+  padding: 1rem;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0.375rem 0px 0px;
+  transition: all 0.3s ease;
+}
+
+/* card hover effect */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some 'background utility classes' */
+/* dark color system */
+.bg-dark {
+  background: var(--dark-color); /*dark-grey*/
+  opacity: 0.9;
+  color: #fff; /*white*/
+}
+/* primary color system */
+.bg-primary {
+  background: var(--primary-color); /*dark-red*/
+  opacity: 0.9;
+  color: #fff; /*white*/
+}
+/* secondary color system */
+.bg-secondary {
+  background: var(--secondary-color);
+  opacity: 0.9;
+  color: #fff; /*white*/
+}
+
+/* Add some 'padding utility classes' */
+/* small padding 1 */
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+/* medium padding 2 */
+.py-2 {
+  padding: 2rem 0;
+}
+
+/* large padding 3 */
+.py-3 {
+  padding: 3rem 0;
+}
+
+/* padding all around */
+.p1 {
+  padding: 1.5rem;
+}
+
+.p2 {
+  padding: 2rem;
+}
+
+.p3 {
+  padding: 3rem;
+}
+
+.p-article {
+  padding: 0 0 1.5rem 0;
+}
+
+/* Add Style for utility classes .'bg-dark' ALL Headings & <a> tag Links; & .'bg-primary' utility classes & .'bg-secondary' utility classes */
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+  color: #fff; /*white*/
+}
+
+/* Utility class: for 'large heading' */
+/* Add Utility class for 'large headings' */
+.l-heading {
+  /* 'font-size' of '3rem' for 'large heading' */
+  font-size: 3rem;
+}
+
+/* Utility class: <li> tag 'list items'*/
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #555 dotted 1px;
+  width: 90%;
+}
+
+/* Style for all the 'List Items Link' <a> tag; for Hover Effect */
+.list li a:hover {
+  color: var(--primary-color) !important; /*dark-red*/
+}
+
+/* Style for Utility class 'page-container'*/
+/* This is 'Grid Container' */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+
+/* Style for the 'Grid Item#1' for class.'page-container' */
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
+}
